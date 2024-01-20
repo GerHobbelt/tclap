@@ -253,8 +253,8 @@ private:
   /**
    * Prevent accidental copying
    */
-  ValueArg(const ValueArg<T>& rhs);
-  ValueArg& operator=(const ValueArg<T>& rhs);
+  ValueArg(const ValueArg<T>& rhs) = delete;
+  ValueArg& operator=(const ValueArg<T>& rhs) = delete;
 };
 
 

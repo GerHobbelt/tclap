@@ -228,8 +228,8 @@ private:
 	/**
 	 * Prevent accidental copying
 	 */
-	MultiArg(const MultiArg<T>& rhs);
-	MultiArg& operator=(const MultiArg<T>& rhs);
+	MultiArg(const MultiArg<T>& rhs) = delete;
+	MultiArg& operator=(const MultiArg<T>& rhs) = delete;
 
 };
 
